@@ -1,0 +1,40 @@
+div.tab-panel-wrap{overflow: hidden;}
+div.tab-label-wrap{padding-top: 4px; padding-left: 4px; height: 24px; border-bottom: 3px solid #ff6a00; background-color: #ffffff; overflow: hidden;}
+div.tab-label-wrap ul{margin: 0px; padding: 0px;}
+div.tab-label-wrap ul li.tab-label{
+    float: left;
+    margin: 0px 4px 0px 0px;
+    height: 24px;
+    line-height: 28px;
+    outline: medium none;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #f3f3f3;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #888888;
+    cursor: default;
+    display: inline-block;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+
+div.tab-label-wrap ul li.tab-label:hover {background-color: #ff6a00; color: #ffff00;}
+div.tab-label-wrap ul li.tab-active{background-color: #ff6a00; color: #ffffff;}
+div.tab-label-wrap ul li.tab-active:hover{background-color: #ff6a00; color: #ffffff;}
+
+div.tab-label-wrap ul li.tab-label span.icon{margin-left: 4px; width: 16px; height: 16px;}
+div.tab-label-wrap ul li.tab-label span.label{padding-left: 16px; padding-right: 16px;}
+div.tab-label-wrap ul li.tab-label span.close{
+    float: right;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+    background: transparent url(?action=res&path=/finder/images/tab-close.gif) no-repeat 0px 0px;
+}
+div.tab-label-wrap ul li.tab-label span.close:hover{background-position: -15px; 0px}
+div.tab-label-wrap span.add{margin-top: 4px; margin-left: 4px; display: inline-block; width: 18px; height: 18px; background: transparent url(?action=res&path=/finder/images/add.gif) no-repeat 0px 0px;}
+div.tab-label-wrap span.add:hover{background-position: -18px; 0px}
+div.tab-panel{clear: both; width: 100%; height: 100%; display: none;}
