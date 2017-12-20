@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>clientserver.Login</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadRemoteFile</servlet-name>
+  	<display-name>ReadRemoteFile</display-name>
+  	<description></description>
+  	<servlet-class>clientserver.Read_RemoteFile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WriteRemoteFile</servlet-name>
+  	<display-name>WriteRemoteFile</display-name>
+  	<description></description>
+  	<servlet-class>clientserver.Write_RemoteFile</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>SendChangesForWrite</servlet-name>
+  	<display-name>SendChangesForWrite</display-name>
+  	<description></description>
+  	<servlet-class>clientserver.Write_Changes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadRemoteFile</servlet-name>
+  	<url-pattern>/ReadRemoteFile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WriteRemoteFile</servlet-name>
+  	<url-pattern>/WriteRemoteFile</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>SendChangesForWrite</servlet-name>
+  	<url-pattern>/SendChangesForWrite</url-pattern>
+  </servlet-mapping>
+</web-app>

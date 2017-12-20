@@ -1,0 +1,19 @@
+create database loginserver;  
+use loginserver;  
+
+CREATE TABLE `loginserver`.`users` (
+  `username` varchar(50) DEFAULT NULL,
+  `pswd` varchar(100) DEFAULT NULL,
+  `fname` varchar(50) DEFAULT NULL,
+  `usertype` varchar(1) DEFAULT NULL,
+  `token` varchar(200) DEFAULT NULL,
+  `encrypt_username` varchar(200) DEFAULT NULL,
+  `key1` varchar(200) DEFAULT NULL,
+  `key2` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `loginserver`.`users` (`username`,`pswd`,`fname`,`usertype`,`token`,`encrypt_username`,`key1`,`key2`) VALUES ('SankalpGupta','password','Sankalp','N','chTDASvx4WJU0moUrzzRWewqbyrhtknA6H0YuUJYLru0j3h4ym3pTw==','z/h4j4sXmQbK+U/QXsqAzg==','[B@793c70e0','[B@5afd71ad'
+);
+commit;
+select * from `loginserver`.`users`;
